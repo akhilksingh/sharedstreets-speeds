@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url":"https://github.com/akhilksingh/sharedstreets-speeds?organization=akhilksingh&organization=akhilksingh"
+    "url": "https://github.com/akhilksingh/sharedstreets-speeds?organization=akhilksingh&organization=akhilksingh"
   },
   "author": "Akhil singh <akhil.singh9022@gmail.com>",
   "engines": {
@@ -37,7 +37,9 @@
     "@turf/helpers": "^6.1.4",
     "chalk": "^2.4.2",
     "cli-progress": "^2.1.1",
-    "sharedstreets": "^0.12.0"
+    "colortape": "^0.1.2",
+    "sharedstreets": "^0.12.0",
+    "tape": "^4.13.2"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.0",
