@@ -1,10 +1,12 @@
 {
-  "name": "sharedstreets-speeds",
-  "version": "1.0.3",
+  "name": "updated-sharedstreets-speeds",
+  "version": "1.0.4",
   "main": "index.js",
-  "repository": "git@github.com:sharedstreets/sharedstreets-speeds.git",
-  "author": "Kevin Webb <kpwebb@gmail.com>",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/akhilksingh/sharedstreets-speeds?organization=akhilksingh&organization=akhilksingh"
+  },
+  "author": "Akhil singh <akhil.singh9022@gmail.com>",
   "engines": {
     "node": ">=11.0.0"
   },
@@ -25,7 +27,8 @@
     "pretest": "tsc",
     "prepack": "rm -rf build && tsc && oclif-dev manifest",
     "test": "tsc && colortape build/test_core.js",
-    "bench": "tsc && node bench.js"
+    "bench": "tsc && node bench.js",
+    "deploy": "npm publish"
   },
   "dependencies": {
     "@oclif/command": "^1.5.13",
@@ -40,5 +43,8 @@
     "@oclif/dev-cli": "^1.22.0",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@akhilksingh"
   }
 }
